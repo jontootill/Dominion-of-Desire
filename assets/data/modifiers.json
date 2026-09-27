@@ -1,0 +1,52 @@
+{
+  "modifiers": [
+    {
+      "id": "mod_1",
+      "name": "Sensory Deprivation",
+      "type": "prop",
+      "description": "The active player must wear a blindfold or keep their eyes closed for the next turn."
+    },
+    {
+      "id": "mod_2",
+      "name": "Temperature Play",
+      "type": "prop",
+      "description": "Incorporate ice or a warm touch element during the next rent task or challenge."
+    },
+    {
+      "id": "mod_3",
+      "name": "Restrained Elegance",
+      "type": "prop",
+      "description": "Hands must remain gently held behind the back or bound during the next action."
+    },
+    {
+      "id": "mod_4",
+      "name": "Whisper Only",
+      "type": "modifier",
+      "description": "All speech must be delivered in a low whisper directly into your partner's ear until your next turn."
+    },
+    {
+      "id": "mod_5",
+      "name": "Extended Duration",
+      "type": "modifier",
+      "description": "Double the duration or repetitions required for your next completed task."
+    },
+    {
+      "id": "mod_6",
+      "name": "Feather Touch",
+      "type": "prop",
+      "description": "Use a feather, soft fabric, or fingertips with minimal pressure for all touches during this round."
+    },
+    {
+      "id": "mod_7",
+      "name": "Mirror Image",
+      "type": "modifier",
+      "description": "Your partner must mimic every movement you perform during your task."
+    },
+    {
+      "id": "mod_8",
+      "name": "Heat Surge",
+      "type": "currency",
+      "description": "Gain +2 Heat currency immediately instead of holding this card."
+    }
+  ]
+}

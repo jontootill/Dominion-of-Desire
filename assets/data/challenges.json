@@ -1,0 +1,181 @@
+[
+  {
+    "tile_id": "tile_1",
+    "tile_name": "Neck & Jawline",
+    "ring": "outer",
+    "variants": {
+      "romantic": {
+        "rent_task": "Give a 1-minute slow, gentle massage along the neck and collarbone.",
+        "takeover_challenge": "Place 5 soft, slow kisses along the neck, moving up from the collarbone to the jawline."
+      },
+      "sensual": {
+        "rent_task": "Trace light fingertips or brush hair lightly across the neck for 1 minute.",
+        "takeover_challenge": "Use a combination of warm breath and light nibbles along the jawline for 90 seconds."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_2",
+    "tile_name": "Shoulders & Upper Back",
+    "ring": "outer",
+    "variants": {
+      "romantic": {
+        "rent_task": "Provide a firm, relaxing shoulder rub for 90 seconds.",
+        "takeover_challenge": "Trace soothing circles across the upper back using fingertips while leaning close."
+      },
+      "sensual": {
+        "rent_task": "Use a favorite oil or lotion to deliver a smooth 2-minute upper back touch.",
+        "takeover_challenge": "Place a series of warm, lingering kisses across both shoulders while pulling your partner close."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_3",
+    "tile_name": "Hands & Arms",
+    "ring": "outer",
+    "variants": {
+      "romantic": {
+        "rent_task": "Hold hands firmly and give a gentle palm/hand massage for 1 minute.",
+        "takeover_challenge": "Kiss along the inside of your partner’s wrist and forearm moving slowly upward."
+      },
+      "sensual": {
+        "rent_task": "Trace light fingertips slowly up the inner arm from wrist to shoulder for 1 minute.",
+        "takeover_challenge": "Interlace fingers tightly and whisper a sensual detail into your partner's ear for 60 seconds."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_4",
+    "tile_name": "Lower Back & Hips",
+    "ring": "outer",
+    "variants": {
+      "romantic": {
+        "rent_task": "Place both hands on the lower back and apply warm, comforting pressure for 1 minute.",
+        "takeover_challenge": "Pull your partner gently by the waist and hold them close for a 1-minute slow sway."
+      },
+      "sensual": {
+        "rent_task": "Massage the lower back and hips with light, teasing touch for 90 seconds.",
+        "takeover_challenge": "Rest your hands firmly on their hips while delivering focused kisses to their lower back."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_5",
+    "tile_name": "Gateway Junction ⚡",
+    "ring": "outer",
+    "variants": {
+      "romantic": {
+        "rent_task": "Share 30 seconds of undivided eye contact while holding both hands.",
+        "takeover_challenge": "Whisper one genuine fantasy or favorite connection memory directly into your partner's ear."
+      },
+      "sensual": {
+        "rent_task": "Give a 30-second passionate kiss before choosing your path.",
+        "takeover_challenge": "Pay 1 Heat Currency or complete a 45-second teasing challenge to gain entry to the Inner Ring."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_6",
+    "tile_name": "Thighs & Knees",
+    "ring": "outer",
+    "variants": {
+      "romantic": {
+        "rent_task": "Rest your hand on their thigh and apply gentle, reassuring rubs for 1 minute.",
+        "takeover_challenge": "Place slow, affectionate kisses along the top of the thigh from knee upward."
+      },
+      "sensual": {
+        "rent_task": "Lightly trace fingertips along the outer thigh in long, teasing strokes for 90 seconds.",
+        "takeover_challenge": "Place warm lips against the thigh, moving gradually higher over 1 minute."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_7",
+    "tile_name": "Feet & Calves",
+    "ring": "outer",
+    "variants": {
+      "romantic": {
+        "rent_task": "Give a comforting 1-minute foot or calf massage.",
+        "takeover_challenge": "Use a warm hand to soothe and rub the arches of the feet for 90 seconds."
+      },
+      "sensual": {
+        "rent_task": "Use smooth, firm upward strokes along the calves for 90 seconds.",
+        "takeover_challenge": "Feather-light fingertip trailing from the ankles all the way up to the back of the knees."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_8",
+    "tile_name": "Scalp & Hair",
+    "ring": "outer",
+    "variants": {
+      "romantic": {
+        "rent_task": "Gently run fingers through their hair and massage the scalp for 1 minute.",
+        "takeover_challenge": "Lightly cradle their head while softly kissing their forehead and temples."
+      },
+      "sensual": {
+        "rent_task": "Gently pull hair at the base of the neck while massaging the scalp for 1 minute.",
+        "takeover_challenge": "Hold your partner’s head close and deliver a slow, deep kiss for 60 seconds."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_9",
+    "tile_name": "Chest & Torso",
+    "ring": "inner",
+    "variants": {
+      "tease": {
+        "rent_task": "Trace light, lingering circles across the chest for 1 minute without breaking contact.",
+        "takeover_challenge": "Deliver warm breath and lingering lip contact across the torso for 90 seconds."
+      },
+      "erotic": {
+        "rent_task": "Owner's choice of sensory tool across this zone for 2 focused minutes.",
+        "takeover_challenge": "A high-intensity, uninterrupted 2-minute sensual focus on the chest and torso."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_10",
+    "tile_name": "Inner Thighs",
+    "ring": "inner",
+    "variants": {
+      "tease": {
+        "rent_task": "Spend 1 minute delivering feather-light touch or breath to the inner thigh region.",
+        "takeover_challenge": "Place hands behind your back and tease the inner thigh using only lips and breath for 90 seconds."
+      },
+      "erotic": {
+        "rent_task": "Deliver 2 minutes of escalating closeness to this zone, building intensity slowly.",
+        "takeover_challenge": "High-intensity takeover: Perform a 2-minute explicit teasing scenario targeted at this zone."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_11",
+    "tile_name": "Intimate Core",
+    "ring": "inner",
+    "variants": {
+      "tease": {
+        "rent_task": "Maintain close physical proximity with light, building touches for 90 seconds.",
+        "takeover_challenge": "Deliver a prolonged, intense kiss while keeping hands firmly on your partner's hips."
+      },
+      "erotic": {
+        "rent_task": "Fulfill a direct, specific request from the owner focused on this zone (2-minute limit).",
+        "takeover_challenge": "Execute a full 2-minute intimate challenge designed by your partner."
+      }
+    }
+  },
+  {
+    "tile_id": "tile_12",
+    "tile_name": "Wildcard / Desire Zone",
+    "ring": "inner",
+    "variants": {
+      "tease": {
+        "rent_task": "The tile owner chooses any non-explicit desire or favor for 90 seconds.",
+        "takeover_challenge": "The challenger proposes a creative sensory challenge that both partners must perform."
+      },
+      "erotic": {
+        "rent_task": "The tile owner commands one explicit scenario or desire to be carried out (3-minute limit).",
+        "takeover_challenge": "The challenger unlocks a free-choice erotic request to winAh, got it. Let's drop the laboratory chemistry entirely and dial into the actual, visceral chemistry—the kind involving slow burns, close proximity, tension, and zero periodic tables." 
+      }
+    }
+  }]

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominion of Desire</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app" class="game-container">
+    
+    <!-- PAGE 1: SETUP SCREEN -->
+    <div id="setup-screen" class="screen active">
+      <div class="card">
+        <h1 class="title">Dominion of Desire</h1>
+        <p class="subtitle">A Game of Intimacy & Strategic Territory</p>
+        
+        <form id="setup-form">
+          <!-- Player Names Input Fields -->
+          <div class="form-group">
+            <label class="section-label">Player Names</label>
+            <div class="name-inputs" style="display: flex; gap: 10px;">
+              <input type="text" id="p1-name" class="text-input" value="Player 1" placeholder="Player 1 Name" required style="width: 50%; padding: 10px; background: #0b0c10; border: 1px solid #45a29e; border-radius: 8px; color: #edf5e1;">
+              <input type="text" id="p2-name" class="text-input" value="Player 2" placeholder="Player 2 Name" required style="width: 50%; padding: 10px; background: #0b0c10; border: 1px solid #45a29e; border-radius: 8px; color: #edf5e1;">
+            </div>
+          </div>
+
+          <!-- Game Length -->
+          <div class="form-group">
+            <label class="section-label">Game Length</label>
+            <div class="segmented-control">
+              <input type="radio" id="mode-short" name="gameMode" value="short" checked>
+              <label for="mode-short">Short (4 Tiles)</label>
+              <input type="radio" id="mode-long" name="gameMode" value="long">
+              <label for="mode-long">Long (12 Tiles)</label>
+            </div>
+          </div>
+
+          <!-- Outer Ring Intensity -->
+          <div class="form-group">
+            <label class="section-label">Outer Ring Intensity</label>
+            <div class="segmented-control">
+              <input type="radio" id="outer-romantic" name="outerSpice" value="romantic" checked>
+              <label for="outer-romantic">Romantic</label>
+              <input type="radio" id="outer-sensual" name="outerSpice" value="sensual">
+              <label for="outer-sensual">Sensual</label>
+            </div>
+          </div>
+
+          <!-- Inner Ring Intensity -->
+          <div class="form-group">
+            <label class="section-label">Inner Ring Intensity</label>
+            <div class="segmented-control">
+              <input type="radio" id="inner-tease" name="innerSpice" value="tease" checked>
+              <label for="inner-tease">Tease</label>
+              <input type="radio" id="inner-erotic" name="innerSpice" value="erotic">
+              <label for="inner-erotic">Erotic</label>
+            </div>
+          </div>
+
+          <button type="submit" id="start-game-btn" class="btn-primary" style="width: 100%; margin-top: 12px; cursor: pointer;">Start Game</button>
+        </form>
+      </div>
+    </div> <!-- CLOSED SETUP SCREEN HERE -->
+
+    <!-- PAGE 2: GAME BOARD SCREEN -->
+    <div id="game-screen" class="screen">
+      <header class="game-header">
+        <div id="player-turn-indicator" class="turn-badge">Player 1's Turn</div>
+        <div class="heat-display">
+          <span>Heat: </span><span id="heat-balance">0</span>
+        </div>
+      </header>
+
+      <main class="board-wrapper">
+        <div class="concentric-board">
+          <!-- Outer Ring Track (8 Circular Slots) -->
+          <div class="ring-track outer-track"></div>
+          <div class="tile outer-tile slot-1" data-tile-id="tile_1"><span>Neck</span></div>
+          <div class="tile outer-tile slot-2" data-tile-id="tile_2"><span>Shoulders</span></div>
+          <div class="tile outer-tile slot-3" data-tile-id="tile_3"><span>Hands</span></div>
+          <div class="tile outer-tile slot-4" data-tile-id="tile_4"><span>Lower Back</span></div>
+          <div class="tile outer-tile gateway-tile slot-5" data-tile-id="tile_5"><span>Junction ⚡</span></div>
+          <div class="tile outer-tile slot-6" data-tile-id="tile_6"><span>Thighs</span></div>
+          <div class="tile outer-tile slot-7" data-tile-id="tile_7"><span>Feet</span></div>
+          <div class="tile outer-tile slot-8" data-tile-id="tile_8"><span>Scalp</span></div>
+
+          <!-- Inner Ring Track (4 Circular Slots) -->
+          <div class="ring-track inner-track"></div>
+          <div class="tile inner-tile slot-9" data-tile-id="tile_9"><span>Chest</span></div>
+          <div class="tile inner-tile slot-10" data-tile-id="tile_10"><span>Inner Thigh</span></div>
+          <div class="tile inner-tile slot-11" data-tile-id="tile_11"><span>Intimate</span></div>
+          <div class="tile inner-tile slot-12" data-tile-id="tile_12"><span>Wildcard</span></div>
+        </div>
+      </main>
+
+      <footer class="controls-panel">
+        <div id="dice-result" class="dice-display">-</div>
+        <button id="roll-btn" class="btn-primary">Roll (1-3)</button>
+      </footer>
+    </div>
+
+    <!-- ACTION MODAL -->
+    <div id="action-modal" class="modal">
+      <div class="modal-content" id="action-modal-body"></div>
+    </div>
+
+  </div>
+
+  <script src="js/cardManager.js"></script>
+  <script src="js/gameEngine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
