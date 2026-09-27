@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }, 1000);
   }
 
-  // TILE INTERACTION FIX
+  // TILE INTERACTION
   function handleTileInteraction(tileId) {
     const activePlayer = window.gameEngine.getActivePlayer();
     const ownerId = window.gameEngine.gameState.tileOwnership[tileId];
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const spanEl = tileElement.querySelector('span');
       domName = spanEl ? spanEl.textContent.trim() : tileElement.textContent.trim();
     }
-    
+
     const zoneName = challengeData?.tile_name || domName || `Zone ${rawNum}`;
     const rentTask = challengeData?.rent_task || 'Perform 30 seconds of gentle touch.';
     const takeoverChallenge = challengeData?.takeover_challenge || 'Perform a 60-second intimate massage.';
@@ -148,38 +148,53 @@ document.addEventListener('DOMContentLoaded', async () => {
         <button id="bank-heat-btn" class="btn-primary" style="width:100%;">+1 Heat & Claim</button>
       `);
 
-      document.getElementById('timer-btn').onclick = () => startModalTimer(30);
+      const timerBtn = document.getElementById('timer-btn');
+      if (timerBtn) timerBtn.onclick = () => startModalTimer(30);
 
-document.getElementById('draw-card-btn').onclick = () => {
-  const modCard = cardManager.drawRandomModifier();
-  
-  const modName = modCard?.name || 'Modifier Card';
-  const modDesc = modCard?.description || 'Perform the current task with an added twist!';
+      const drawCardBtn = document.getElementById('draw-card-btn');
+      if (drawCardBtn) {
+        drawCardBtn.onclick = () => {
+          let modCard = null;
+          try {
+            modCard = cardManager.drawRandomModifier();
+          } catch (err) {
+            console.error('Error drawing modifier card:', err);
+          }
+          
+          const modName = modCard?.name || 'Modifier Card';
+          const modDesc = modCard?.description || 'Perform the current task with an added twist!';
 
-  showModal(`
-    <div style="border: 2px solid #f39c12; border-radius: 12px; padding: 16px; background: rgba(243, 156, 18, 0.1); margin-bottom: 16px;">
-      <span style="font-size: 0.85rem; text-transform: uppercase; color: #f39c12; font-weight: bold;">✨ Modifier Card</span>
-      <h2 style="color: #f1c40f; margin: 8px 0;">${modName}</h2>
-      <p style="font-size: 1.05rem; line-height: 1.4; color: #edf5e1;">${modDesc}</p>
-    </div>
-    <div style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
-      <p style="margin: 0; color: #45a29e; font-weight: bold; font-size: 0.9rem;">BASE TASK:</p>
-      <p style="margin: 4px 0 0 0;">${rentTask}</p>
-    </div>
-    <button id="confirm-mod-btn" class="btn-primary" style="width: 100%;">Complete Task & Claim Zone</button>
-  `);
+          showModal(`
+            <div style="border: 2px solid #f39c12; border-radius: 12px; padding: 16px; background: rgba(243, 156, 18, 0.1); margin-bottom: 16px;">
+              <span style="font-size: 0.85rem; text-transform: uppercase; color: #f39c12; font-weight: bold;">✨ Modifier Card</span>
+              <h2 style="color: #f1c40f; margin: 8px 0;">${modName}</h2>
+              <p style="font-size: 1.05rem; line-height: 1.4; color: #edf5e1;">${modDesc}</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <p style="margin: 0; color: #45a29e; font-weight: bold; font-size: 0.9rem;">BASE TASK:</p>
+              <p style="margin: 4px 0 0 0;">${rentTask}</p>
+            </div>
+            <button id="confirm-mod-btn" class="btn-primary" style="width: 100%;">Complete Task & Claim Zone</button>
+          `);
 
-  document.getElementById('confirm-mod-btn').onclick = () => {
-    window.gameEngine.claimTile(tileId, activePlayer.id);
-    completeTurn();
-  };
-};
+          const confirmModBtn = document.getElementById('confirm-mod-btn');
+          if (confirmModBtn) {
+            confirmModBtn.onclick = () => {
+              window.gameEngine.claimTile(tileId, activePlayer.id);
+              completeTurn();
+            };
+          }
+        };
+      }
 
-      document.getElementById('bank-heat-btn').onclick = () => {
-        window.gameEngine.addHeat(activePlayer.id, 1);
-        window.gameEngine.claimTile(tileId, activePlayer.id);
-        completeTurn();
-      };
+      const bankHeatBtn = document.getElementById('bank-heat-btn');
+      if (bankHeatBtn) {
+        bankHeatBtn.onclick = () => {
+          window.gameEngine.addHeat(activePlayer.id, 1);
+          window.gameEngine.claimTile(tileId, activePlayer.id);
+          completeTurn();
+        };
+      }
 
     // 2. OWNED BY SELF
     } else if (ownerId === activePlayer.id) {
@@ -188,11 +203,15 @@ document.getElementById('draw-card-btn').onclick = () => {
         <p style="margin: 16px 0;">You land safely in your own zone!</p>
         <button id="close-modal-btn" class="btn-primary" style="width:100%;">Continue Turn</button>
       `);
-      document.getElementById('close-modal-btn').onclick = completeTurn;
+      
+      const closeModalBtn = document.getElementById('close-modal-btn');
+      if (closeModalBtn) closeModalBtn.onclick = completeTurn;
 
     // 3. OWNED BY OPPONENT (RENT / TAKEOVER)
     } else {
       const opponent = window.gameEngine.getOpponentPlayer();
+      const currentOwnerId = ownerId; // Guard the ownerId reference locally
+
       showModal(`
         <h2>Territory of ${opponent.name}: ${zoneName}</h2>
         
@@ -214,28 +233,38 @@ document.getElementById('draw-card-btn').onclick = () => {
         </button>
       `);
 
-      document.getElementById('timer-btn').onclick = () => startModalTimer(30);
+      const timerBtn = document.getElementById('timer-btn');
+      if (timerBtn) timerBtn.onclick = () => startModalTimer(30);
 
-      document.getElementById('pay-rent-btn').onclick = () => {
-        window.gameEngine.addHeat(ownerId, 1);
-        completeTurn();
-      };
-
-      document.getElementById('takeover-btn').onclick = () => {
-        showModal(`
-          <h2>🔥 Takeover Challenge: ${zoneName}</h2>
-          <div style="background: rgba(155, 89, 182, 0.2); border: 1px solid #9b59b6; padding: 14px; border-radius: 8px; margin: 16px 0; text-align: left;">
-            <p style="margin: 0; color: #9b59b6; font-weight: bold; font-size: 0.85rem; text-transform: uppercase;">Challenge Required:</p>
-            <p style="margin: 6px 0 0 0; font-size: 1.1rem; line-height: 1.4; color: #edf5e1;">${takeoverChallenge}</p>
-          </div>
-          <button id="confirm-takeover-btn" class="btn-primary" style="width: 100%;">Complete & Take Control</button>
-        `);
-
-        document.getElementById('confirm-takeover-btn').onclick = () => {
-          window.gameEngine.transferTile(tileId, activePlayer.id);
+      const payRentBtn = document.getElementById('pay-rent-btn');
+      if (payRentBtn) {
+        payRentBtn.onclick = () => {
+          window.gameEngine.addHeat(currentOwnerId, 1);
           completeTurn();
         };
-      };
+      }
+
+      const takeoverBtn = document.getElementById('takeover-btn');
+      if (takeoverBtn) {
+        takeoverBtn.onclick = () => {
+          showModal(`
+            <h2>🔥 Takeover Challenge: ${zoneName}</h2>
+            <div style="background: rgba(155, 89, 182, 0.2); border: 1px solid #9b59b6; padding: 14px; border-radius: 8px; margin: 16px 0; text-align: left;">
+              <p style="margin: 0; color: #9b59b6; font-weight: bold; font-size: 0.85rem; text-transform: uppercase;">Challenge Required:</p>
+              <p style="margin: 6px 0 0 0; font-size: 1.1rem; line-height: 1.4; color: #edf5e1;">${takeoverChallenge}</p>
+            </div>
+            <button id="confirm-takeover-btn" class="btn-primary" style="width: 100%;">Complete & Take Control</button>
+          `);
+
+          const confirmTakeoverBtn = document.getElementById('confirm-takeover-btn');
+          if (confirmTakeoverBtn) {
+            confirmTakeoverBtn.onclick = () => {
+              window.gameEngine.transferTile(tileId, activePlayer.id);
+              completeTurn();
+            };
+          }
+        };
+      }
     }
   }
 
@@ -248,15 +277,21 @@ document.getElementById('draw-card-btn').onclick = () => {
       <button id="stay-outer-btn" class="btn-primary" style="width:100%;">Remain in Outer Ring</button>
     `);
 
-    document.getElementById('enter-inner-btn').onclick = () => {
-      window.gameEngine.enterInnerRing();
-      updateBoardTokens();
-      handleTileInteraction(`tile_${activePlayer.position}`);
-    };
+    const enterInnerBtn = document.getElementById('enter-inner-btn');
+    if (enterInnerBtn) {
+      enterInnerBtn.onclick = () => {
+        window.gameEngine.enterInnerRing();
+        updateBoardTokens();
+        handleTileInteraction(`tile_${activePlayer.position}`);
+      };
+    }
 
-    document.getElementById('stay-outer-btn').onclick = () => {
-      handleTileInteraction('tile_5');
-    };
+    const stayOuterBtn = document.getElementById('stay-outer-btn');
+    if (stayOuterBtn) {
+      stayOuterBtn.onclick = () => {
+        handleTileInteraction('tile_5');
+      };
+    }
   }
 
   function completeTurn() {
@@ -270,7 +305,8 @@ document.getElementById('draw-card-btn').onclick = () => {
         <p>Full territory dominion achieved.</p>
         <button id="restart-btn" class="btn-primary" style="width:100%; margin-top: 12px;">Play Again</button>
       `);
-      document.getElementById('restart-btn').onclick = () => location.reload();
+      const restartBtn = document.getElementById('restart-btn');
+      if (restartBtn) restartBtn.onclick = () => location.reload();
     } else {
       window.gameEngine.switchTurn();
       showHandoverModal();
@@ -286,10 +322,13 @@ document.getElementById('draw-card-btn').onclick = () => {
       <button id="ready-btn" class="btn-primary" style="width:100%;">I'm Ready!</button>
     `);
 
-    document.getElementById('ready-btn').onclick = () => {
-      hideModal();
-      updateUI();
-    };
+    const readyBtn = document.getElementById('ready-btn');
+    if (readyBtn) {
+      readyBtn.onclick = () => {
+        hideModal();
+        updateUI();
+      };
+    }
   }
 
   function showModal(contentHtml) {

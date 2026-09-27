@@ -6,14 +6,33 @@ class CardManager {
 
   async loadData() {
     try {
-      const challengesRes = await fetch('assets/data/challenges.json');
-      this.challenges = await challengesRes.json();
-      console.log("Loaded challenges array:", this.challenges);
+      const [challengesRes, modifiersRes] = await Promise.all([
+        fetch('assets/data/challenges.json'),
+        fetch('assets/data/modifiers.json')
+      ]);
 
-      const modifiersRes = await fetch('assets/data/modifiers.json');
-      this.modifiers = await modifiersRes.json();
+      if (challengesRes.ok) {
+        const rawChallenges = await challengesRes.ok ? await challengesRes.json() : [];
+        this.challenges = Array.isArray(rawChallenges) 
+          ? rawChallenges 
+          : (rawChallenges.challenges || rawChallenges.cards || []);
+      }
+
+      if (modifiersRes.ok) {
+        const rawModifiers = await modifiersRes.json();
+        // Handle both flat array [...] and wrapped objects like { "modifiers": [...] } or { "cards": [...] }
+        if (Array.isArray(rawModifiers)) {
+          this.modifiers = rawModifiers;
+        } else if (rawModifiers && Array.isArray(rawModifiers.modifiers)) {
+          this.modifiers = rawModifiers.modifiers;
+        } else if (rawModifiers && Array.isArray(rawModifiers.cards)) {
+          this.modifiers = rawModifiers.cards;
+        } else {
+          this.modifiers = [];
+        }
+      }
     } catch (err) {
-      console.error('Error loading game card/challenge data:', err);
+      console.error("Error loading card JSON data:", err);
     }
   }
 
@@ -32,8 +51,7 @@ class CardManager {
 
     // Look for exact match
     const tileData = this.challenges.find(item => 
-      String(item.tile_id) === formattedId || 
-      String(item.tile_id) === num
+      item && (String(item.tile_id) === formattedId || String(item.tile_id) === num)
     );
 
     console.log("Matched tileData from JSON:", tileData);
@@ -48,6 +66,8 @@ class CardManager {
       variant = tileData.variants[intensitySetting] || 
                 tileData.variants['romantic'] || 
                 tileData.variants['sensual'] || 
+                tileData.variants['tease'] || 
+                tileData.variants['erotic'] || 
                 Object.values(tileData.variants)[0];
     } else {
       variant = tileData;
@@ -55,10 +75,28 @@ class CardManager {
 
     console.log("Selected variant:", variant);
 
+    const getRandomItem = (dataField, fallback) => {
+      if (Array.isArray(dataField) && dataField.length > 0) {
+        const index = Math.floor(Math.random() * dataField.length);
+        return dataField[index];
+      }
+      return typeof dataField === 'string' ? dataField : fallback;
+    };
+
+    const selectedRentTask = getRandomItem(
+      variant?.rent_task, 
+      'Perform 30 seconds of gentle touch.'
+    );
+
+    const selectedTakeoverChallenge = getRandomItem(
+      variant?.takeover_challenge, 
+      'Perform a challenge to claim this territory.'
+    );
+
     const result = {
       tile_name: tileData.tile_name || tileData.name || null,
-      rent_task: variant?.rent_task || 'Perform 30 seconds of gentle touch.',
-      takeover_challenge: variant?.takeover_challenge || 'Perform a challenge.'
+      rent_task: selectedRentTask,
+      takeover_challenge: selectedTakeoverChallenge
     };
 
     console.log("Final returned result object:", result);
@@ -66,14 +104,25 @@ class CardManager {
   }
 
   drawRandomModifier() {
-    if (!this.modifiers || this.modifiers.length === 0) {
+    const validModifiers = Array.isArray(this.modifiers) 
+      ? this.modifiers.filter(Boolean) 
+      : [];
+
+    if (validModifiers.length === 0) {
       return {
-        name: 'Sensual Touch',
-        description: 'Perform the action with extra slow movements.'
+        name: 'Slow Motion',
+        description: 'Perform the action with extra slow movements and focus.',
+        title: 'Slow Motion'
       };
     }
-    const randomIndex = Math.floor(Math.random() * this.modifiers.length);
-    return this.modifiers[randomIndex];
+
+    const randomIndex = Math.floor(Math.random() * validModifiers.length);
+    const mod = validModifiers[randomIndex];
+
+    return {
+      name: mod?.name || mod?.title || mod?.modifier_name || 'Modifier Card',
+      description: mod?.description || mod?.task || mod?.text || 'Perform the current task with an added twist!'
+    };
   }
 }
 
