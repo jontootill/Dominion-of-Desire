@@ -2,180 +2,577 @@
   {
     "tile_id": "tile_1",
     "tile_name": "Neck & Jawline",
-    "ring": "outer",
     "variants": {
       "romantic": {
-        "rent_task": "Give a 1-minute slow, gentle massage along the neck and collarbone.",
-        "takeover_challenge": "Place 5 soft, slow kisses along the neck, moving up from the collarbone to the jawline."
+        "rent_task": [
+          "Place three soft, lingering kisses along their jawline.",
+          "Gently trace their jaw with your index finger for 30 seconds.",
+          "Rest your head in the nook of their neck and breathe in deeply.",
+          "Kiss the hollow of their throat softly."
+        ],
+        "takeover_challenge": [
+          "Slowly kiss a trail from their earlobe down to their collarbone.",
+          "Give a gentle 60-second massage to the back of their neck.",
+          "Hold them close and brush your lips along their neck for 45 seconds.",
+          "Whisper three sweet words against their neck between soft kisses."
+        ]
       },
       "sensual": {
-        "rent_task": "Trace light fingertips or brush hair lightly across the neck for 1 minute.",
-        "takeover_challenge": "Use a combination of warm breath and light nibbles along the jawline for 90 seconds."
+        "rent_task": [
+          "Use your breath to warm the side of their neck, then softly bite their jawline.",
+          "Kiss along their jaw while gently pulling them closer by the waist.",
+          "Trace their neck with your tongue and blow softly on the damp skin.",
+          "Give 45 seconds of continuous, soft kisses from their chin to their neck."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds delivering slow, wet kisses to their neck and jaw.",
+          "Lightly nibble and suck on the sensitive skin under their jaw for 45 seconds.",
+          "Guide their head back gently and explore their exposed neck with your tongue.",
+          "Use a combination of soft touch and firm bites along their neck for 1 minute."
+        ]
+      },
+      "erotic": {
+        "rent_task": [
+          "Give intense, sucking kisses along their neck line to leave a mark.",
+          "Firmly bite their jawline and follow with deep, wet kisses.",
+          "Press your body against theirs, pin them slightly, and aggressively kiss their neck.",
+          "Whisper exactly what you want them to do to you while licking their neck."
+        ],
+        "takeover_challenge": [
+          "Deliver 60 seconds of firm, passionate biting and kissing along their neck.",
+          "Control their head positioning by the hair and explore their neck for 1 minute.",
+          "Leave soft suction marks along their neck and jawline.",
+          "Tease their neck with warm breath, hard bites, and deep licks for 60 seconds."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_2",
     "tile_name": "Shoulders & Upper Back",
-    "ring": "outer",
     "variants": {
       "romantic": {
-        "rent_task": "Provide a firm, relaxing shoulder rub for 90 seconds.",
-        "takeover_challenge": "Trace soothing circles across the upper back using fingertips while leaning close."
+        "rent_task": [
+          "Kiss the top of both shoulders gently.",
+          "Massage their shoulders with gentle pressure for 30 seconds.",
+          "Give a soft 30-second back rub over their clothes.",
+          "Kiss the space right between their shoulder blades."
+        ],
+        "takeover_challenge": [
+          "Give a relaxing 60-second shoulder and upper back massage.",
+          "Slowly kiss three points across their upper back.",
+          "Wrap your arms around them from behind and kiss their shoulders.",
+          "Use long, smooth strokes down their shoulder blades for 45 seconds."
+        ]
       },
       "sensual": {
-        "rent_task": "Use a favorite oil or lotion to deliver a smooth 2-minute upper back touch.",
-        "takeover_challenge": "Place a series of warm, lingering kisses across both shoulders while pulling your partner close."
+        "rent_task": [
+          "Run your fingernails lightly down their bare upper back for 30 seconds.",
+          "Kiss every vertebra from their neck down to the middle of their back.",
+          "Gently bite their shoulder muscles and follow with warm kisses.",
+          "Massage their shoulders while leaning in to kiss the back of their neck."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds delivering light scratches and kisses across their shoulder blades.",
+          "Lift or remove their top and explore their upper back with lotion or oil.",
+          "Use your lips and tongue to trace their spine between their shoulders.",
+          "Press your chest fully against their bare back while holding their shoulders."
+        ]
+      },
+      "erotic": {
+        "rent_task": [
+          "Gently scratch their upper back with your nails while kissing their neck deeply.",
+          "Bite firmly along their shoulder slope while gripping their waist.",
+          "Press them face-down gently and explore their upper back thoroughly.",
+          "Run warm licks across their shoulder blades for 45 seconds."
+        ],
+        "takeover_challenge": [
+          "Spend 1 minute delivering intense nail scratches, bites, and kisses to their back.",
+          "Expose their back completely and use your mouth to tease their shoulders.",
+          "Straddle them and give a firm, sensual upper back massage.",
+          "Arch their back gently and kiss aggressively down their upper spine."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_3",
     "tile_name": "Hands & Arms",
-    "ring": "outer",
     "variants": {
       "romantic": {
-        "rent_task": "Hold hands firmly and give a gentle palm/hand massage for 1 minute.",
-        "takeover_challenge": "Kiss along the inside of your partner’s wrist and forearm moving slowly upward."
+        "rent_task": [
+          "Kiss the palm and back of both of their hands.",
+          "Interlock your fingers with theirs and hold tightly for 30 seconds.",
+          "Gently massage their hand and individual fingers.",
+          "Trace a finger from their shoulder down to their fingertips."
+        ],
+        "takeover_challenge": [
+          "Kiss each individual finger and thumb slowly and intentionally.",
+          "Give a relaxing 60-second hand and arm massage.",
+          "Hold both of their hands against your chest so they feel your heartbeat.",
+          "Stroke their arms softly while looking into their eyes for 45 seconds."
+        ]
       },
       "sensual": {
-        "rent_task": "Trace light fingertips slowly up the inner arm from wrist to shoulder for 1 minute.",
-        "takeover_challenge": "Interlace fingers tightly and whisper a sensual detail into your partner's ear for 60 seconds."
+        "rent_task": [
+          "Suck gently on one of their fingers for 30 seconds.",
+          "Kiss the inside of their wrists where their pulse beats.",
+          "Run your fingernails lightly up and down their inner arms for 30 seconds.",
+          "Gently scratch their inner wrist with your fingernails."
+        ],
+        "takeover_challenge": [
+          "Take their fingers into your mouth one by one, teasing with your tongue for 60s.",
+          "Kiss and lick both pulse points on their wrists for 45 seconds.",
+          "Pin their wrists gently above their head and kiss their inner arms.",
+          "Guide their hands over your body to show them exactly where you want touch."
+        ]
+      },
+      "erotic": {
+        "rent_task": [
+          "Deeply suck their index and middle fingers while making eye contact.",
+          "Bite gently on their inner wrist and follow with wet kisses.",
+          "Restrain their arms behind their back for 30 seconds while kissing them.",
+          "Hold their wrists firmly over their head while kissing them deeply."
+        ],
+        "takeover_challenge": [
+          "Use your mouth to explore their hands and fingers erotically for 60 seconds.",
+          "Firmly bind or hold their wrists together while teasing them physically.",
+          "Pin their arms down and take complete control of their body for 60 seconds.",
+          "Spend 1 minute kissing up from their wrists to their inner arms with high heat."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_4",
     "tile_name": "Lower Back & Hips",
-    "ring": "outer",
     "variants": {
       "romantic": {
-        "rent_task": "Place both hands on the lower back and apply warm, comforting pressure for 1 minute.",
-        "takeover_challenge": "Pull your partner gently by the waist and hold them close for a 1-minute slow sway."
+        "rent_task": [
+          "Rest your hands on their hips and sway gently together for 30 seconds.",
+          "Wrap your arms around their waist from behind and hold them close.",
+          "Give their hips a gentle squeeze while kissing their cheek.",
+          "Trace light patterns on their lower back with your fingertips."
+        ],
+        "takeover_challenge": [
+          "Hold their hips firmly and pull them into a tight embrace for 45 seconds.",
+          "Place warm hands on their lower back and look into their eyes without speaking.",
+          "Gently massage their lower hips and lumbar area for 60 seconds.",
+          "Trace light circles on their hips with both hands."
+        ]
       },
       "sensual": {
-        "rent_task": "Massage the lower back and hips with light, teasing touch for 90 seconds.",
-        "takeover_challenge": "Rest your hands firmly on their hips while delivering focused kisses to their lower back."
+        "rent_task": [
+          "Kiss along the outer edge of their hip bone for 30 seconds.",
+          "Slide your hands under their clothing to rest on their bare lower back.",
+          "Trace your fingernails along the sides of their waist for 30 seconds.",
+          "Gently trace their hip curvature with warm palms."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds massaging their lower back and squeezing their hips.",
+          "Pull their hips flush against yours and hold the contact for 45 seconds.",
+          "Use your tongue to trace along their hip bones line.",
+          "Kiss every vertebra on their lower spine down to their waistline."
+        ]
+      },
+      "erotic": {
+        "rent_task": [
+          "Grip their hips firmly and pull them hard into your body.",
+          "Reach inside their waistband to cup their bare buttocks and hips.",
+          "Bite gently on their hip bone area for 30 seconds.",
+          "Press your hips into theirs while pinning them down."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds delivering intense squeezes and wet kisses to their hips.",
+          "Take full control of their hip movement, guiding them rhythmically.",
+          "Expose their lower back and hips and use your mouth and hands intensely.",
+          "Pull their lower body tightly into yours for 1 minute of uninterrupted grinding."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_5",
-    "tile_name": "Gateway Junction ⚡",
-    "ring": "outer",
+    "tile_name": "Gateway Junction",
     "variants": {
       "romantic": {
-        "rent_task": "Share 30 seconds of undivided eye contact while holding both hands.",
-        "takeover_challenge": "Whisper one genuine fantasy or favorite connection memory directly into your partner's ear."
+        "rent_task": [
+          "Share 30 seconds of undivided eye contact while holding both hands.",
+          "Tell your partner one reason you feel lucky to be with them right now.",
+          "Give a lingering, 30-second hug with no talking.",
+          "Gently cup their face and give them a slow, soft kiss."
+        ],
+        "takeover_challenge": [
+          "Whisper one genuine fantasy or favorite intimate memory to your partner.",
+          "Slow dance together for 60 seconds with no music playing.",
+          "Spend 1 minute kissing your partner anywhere except their lips.",
+          "Hold their gaze for 60 seconds while stroking their hair."
+        ]
       },
       "sensual": {
-        "rent_task": "Give a 30-second passionate kiss before choosing your path.",
-        "takeover_challenge": "Pay 1 Heat Currency or complete a 45-second teasing challenge to gain entry to the Inner Ring."
+        "rent_task": [
+          "Blindfold or close your partner's eyes and touch 3 different spots on their body.",
+          "Whisper a secret desire into their ear with slow, hot breaths.",
+          "Remove one non-essential item of clothing from your partner.",
+          "Tease their skin with light fingernail tracing for 45 seconds."
+        ],
+        "takeover_challenge": [
+          "Take away your partner's sight and spend 1 minute teasing their senses.",
+          "Use an ice cube or warm breath to stimulate a sensitive spot for 60 seconds.",
+          "Guide their hand over your body to show them exactly what you want.",
+          "Give a 60-second massage to any area of your partner's choosing."
+        ]
+      },
+      "erotic": {
+        "rent_task": [
+          "Remove an item of your partner's clothing using only your teeth.",
+          "Command your partner to touch themselves for 30 seconds while you watch.",
+          "Take total physical control of your partner for 45 seconds.",
+          "Whisper a highly explicit instruction that they must follow on their next turn."
+        ],
+        "takeover_challenge": [
+          "Blindfold and lightly restrain your partner, teasing them for 60 seconds.",
+          "Spend 1 minute performing your absolute favorite erotic act on them.",
+          "Strip your partner down to their underwear (or less) very slowly.",
+          "Command them to pleasure you for 60 seconds exactly how you instruct."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_6",
     "tile_name": "Thighs & Knees",
-    "ring": "outer",
     "variants": {
       "romantic": {
-        "rent_task": "Rest your hand on their thigh and apply gentle, reassuring rubs for 1 minute.",
-        "takeover_challenge": "Place slow, affectionate kisses along the top of the thigh from knee upward."
+        "rent_task": [
+          "Gently rest your hand on their thigh for 30 seconds.",
+          "Kiss the top of both knees softly.",
+          "Give a gentle 30-second thigh massage over their clothes.",
+          "Trace patterns on their knee with your finger."
+        ],
+        "takeover_challenge": [
+          "Slowly stroke up from their knees to their mid-thigh for 45 seconds.",
+          "Give a relaxing 60-second thigh massage with steady pressure.",
+          "Rest your head on their lap while they stroke your hair.",
+          "Kiss a path up from their knee to their upper thigh softly."
+        ]
       },
       "sensual": {
-        "rent_task": "Lightly trace fingertips along the outer thigh in long, teasing strokes for 90 seconds.",
-        "takeover_challenge": "Place warm lips against the thigh, moving gradually higher over 1 minute."
+        "rent_task": [
+          "Run your hand up their thigh, stopping just before their hip.",
+          "Kiss the sensitive skin on their inner knee for 30 seconds.",
+          "Use your fingernails to lightly scratch up their outer thighs.",
+          "Blow warm air onto their thigh, followed by a soft bite."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds exploring their thighs with warm touch.",
+          "Slowly slide your hand up under their shorts/skirt onto their bare thigh.",
+          "Kiss high up on their thigh, inching closer to their center.",
+          "Massage their thighs firmly while using warm mouth contact on their knees."
+        ]
+      },
+      "erotic": {
+        "rent_task": [
+          "Gently bite and kiss their mid-thigh for 45 seconds.",
+          "Slide your hands high onto their thighs with firm pressure.",
+          "Use warm tongue strokes along their thigh line.",
+          "Spread their knees apart gently and place your hands on their upper thighs."
+        ],
+        "takeover_challenge": [
+          "Spend 1 minute delivering teasing touch and warm kisses high on their thighs.",
+          "Part their legs and explore their thigh area intensely with hands and mouth.",
+          "Use a combination of light scratches, nibbles, and deep pressure on their thighs.",
+          "Restrain their knees apart for 60 seconds while building physical tension."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_7",
     "tile_name": "Feet & Calves",
-    "ring": "outer",
     "variants": {
       "romantic": {
-        "rent_task": "Give a comforting 1-minute foot or calf massage.",
-        "takeover_challenge": "Use a warm hand to soothe and rub the arches of the feet for 90 seconds."
+        "rent_task": [
+          "Give a soft 30-second foot rub.",
+          "Kiss the top of one foot gently.",
+          "Gently squeeze their calf muscles for 30 seconds.",
+          "Remove their socks or shoes softly and warm their feet with your hands."
+        ],
+        "takeover_challenge": [
+          "Give a relaxing 60-second foot and ankle massage.",
+          "Stroke up from their ankles to their knees slowly for 45 seconds.",
+          "Hold their feet in your lap and warm them with gentle rubbing.",
+          "Massage their calf muscles with relaxing oil or lotion for 1 minute."
+        ]
       },
       "sensual": {
-        "rent_task": "Use smooth, firm upward strokes along the calves for 90 seconds.",
-        "takeover_challenge": "Feather-light fingertip trailing from the ankles all the way up to the back of the knees."
+        "rent_task": [
+          "Trace your fingers along the arch of their foot for 30 seconds.",
+          "Kiss along their ankle bone and lower calf.",
+          "Use your toes to playfully stroke their feet or lower legs.",
+          "Gently scratch up their calves with your fingernails."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds massaging their arches and toes with focused attention.",
+          "Kiss up their calf from ankle to knee line.",
+          "Use feather-light touches along the soles of their feet for 45 seconds.",
+          "Warm their ankles and calves with warm breath and light licks."
+        ]
+      },
+      "erotic": {
+        "rent_task": [
+          "Kiss high up their calves toward the back of their knees.",
+          "Deeply massage their soles while maintaining intense eye contact.",
+          "Trace your tongue along their arch and ankle bone.",
+          "Squeeze their calf muscles firmly while teasing higher up their leg."
+        ],
+        "takeover_challenge": [
+          "Spend 1 minute giving a sensual foot and lower leg massage.",
+          "Kiss and nibble from their toes up to their lower knees.",
+          "Use oil to give an erotic lower leg and ankle massage for 60 seconds.",
+          "Place their feet on your chest or lap and give continuous physical touch."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_8",
     "tile_name": "Scalp & Hair",
-    "ring": "outer",
     "variants": {
       "romantic": {
-        "rent_task": "Gently run fingers through their hair and massage the scalp for 1 minute.",
-        "takeover_challenge": "Lightly cradle their head while softly kissing their forehead and temples."
+        "rent_task": [
+          "Run your fingers gently through their hair for 30 seconds.",
+          "Kiss their forehead softly and hold it there.",
+          "Give them a light, soothing 30-second scalp massage.",
+          "Gently tuck their hair behind their ears and gaze at their face."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds giving a deep, relaxing head and scalp massage.",
+          "Brush or comb their hair with your fingers slowly for 45 seconds.",
+          "Cradle the back of their head and stroke their hair while kissing their face.",
+          "Rest their head in your lap and gently massage their temples and scalp."
+        ]
       },
       "sensual": {
-        "rent_task": "Gently pull hair at the base of the neck while massaging the scalp for 1 minute.",
-        "takeover_challenge": "Hold your partner’s head close and deliver a slow, deep kiss for 60 seconds."
+        "rent_task": [
+          "Lightly scratch their scalp with your fingernails for 30 seconds.",
+          "Run your hands through their hair while kissing their neck.",
+          "Gently pull them closer to you by the back of their hair.",
+          "Trace the hairline at the nape of their neck with your lips."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds alternating between scalp scratches and deep neck kisses.",
+          "Grip the back of their hair softly to angle their head for a long kiss.",
+          "Massage their scalp while whispering softly into their ear.",
+          "Use both hands to deeply stroke through their hair, maintaining eye contact."
+        ]
+      },
+      "erotic": {
+        "rent_task": [
+          "Grip their hair firmly and pull their head back gently to expose their neck.",
+          "Use their hair to pull them into a sudden, deep kiss.",
+          "Tug on their hair rhythmically while kissing their mouth or neck.",
+          "Hold the back of their head firmly in place while you pleasure them."
+        ],
+        "takeover_challenge": [
+          "Control their head movements entirely using their hair for 60 seconds.",
+          "Give a firm scalp massage that transitions into aggressive hair pulling and kissing.",
+          "Pull their hair gently to dictate where you want their mouth to go.",
+          "Maintain a firm grip on their hair while teasing their body for 1 minute."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_9",
     "tile_name": "Chest & Torso",
-    "ring": "inner",
     "variants": {
-      "tease": {
-        "rent_task": "Trace light, lingering circles across the chest for 1 minute without breaking contact.",
-        "takeover_challenge": "Deliver warm breath and lingering lip contact across the torso for 90 seconds."
+      "romantic": {
+        "rent_task": [
+          "Rest your head on their chest and listen to their heart for 30 seconds.",
+          "Place a warm, soft kiss over their heart.",
+          "Gently stroke their torso with warm hands.",
+          "Hold them close, pressing your chest against theirs in a warm embrace."
+        ],
+        "takeover_challenge": [
+          "Trace light patterns across their chest with your fingers for 45 seconds.",
+          "Kiss gently across their upper chest and sternum area.",
+          "Gently massage their torso with soft, rhythmic motions for 60 seconds.",
+          "Whisper sweet words while resting your hand flat against their chest."
+        ]
+      },
+      "sensual": {
+        "rent_task": [
+          "Use warm breath and soft touches across their chest for 30 seconds.",
+          "Kiss down the center line of their torso to their stomach.",
+          "Gently caress their chest over or under clothing.",
+          "Lick softly along their collarbone down to their chest line."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds massaging their chest with soft touch and kisses.",
+          "Tease sensitive spots on their torso through light touches and nibbles.",
+          "Unbutton or lift their top to expose their chest for physical touch.",
+          "Use a combination of warm tongue flicks and cool breath on their torso."
+        ]
       },
       "erotic": {
-        "rent_task": "Owner's choice of sensory tool across this zone for 2 focused minutes.",
-        "takeover_challenge": "A high-intensity, uninterrupted 2-minute sensual focus on the chest and torso."
+        "rent_task": [
+          "Gently bite and kiss sensitive areas on their chest for 45 seconds.",
+          "Expose their torso and use your lips and tongue continuously.",
+          "Use firm, teasing touches on their chest while kissing their mouth.",
+          "Whisper explicit compliments about their body while touching them."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds delivering intense mouth and hand attention to their chest/nipples.",
+          "Remove upper clothing and explore their torso area completely for 1 minute.",
+          "Alternate firm caresses with warm licks and nibbles on their chest area.",
+          "Take control and tease their torso area until the timer runs out."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_10",
     "tile_name": "Inner Thighs",
-    "ring": "inner",
     "variants": {
-      "tease": {
-        "rent_task": "Spend 1 minute delivering feather-light touch or breath to the inner thigh region.",
-        "takeover_challenge": "Place hands behind your back and tease the inner thigh using only lips and breath for 90 seconds."
+      "romantic": {
+        "rent_task": [
+          "Gently rub their inner thigh over their clothing for 30 seconds.",
+          "Rest your hand warmly on their inner thigh while maintaining eye contact.",
+          "Give a gentle 30-second inner thigh massage.",
+          "Kiss the fabric of their clothes softly along their inner thigh."
+        ],
+        "takeover_challenge": [
+          "Slowly stroke up and down their inner thigh for 45 seconds.",
+          "Give a relaxing 60-second inner thigh massage with steady pressure.",
+          "Rest your head near their lap and stroke their inner thighs.",
+          "Kiss a path up their inner thigh, stopping safely away from the center."
+        ]
+      },
+      "sensual": {
+        "rent_task": [
+          "Run your bare hand high up their inner thigh, stopping just before their core.",
+          "Kiss the sensitive skin high up on their inner thigh for 30 seconds.",
+          "Use your fingernails to lightly scratch the sensitive skin of their inner thighs.",
+          "Blow warm air onto their bare inner thigh, followed by a soft bite."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds exploring their bare inner thighs with warm touch.",
+          "Slowly slide your hands under their clothing to massage high on their inner thighs.",
+          "Kiss high up on their inner thigh, inching closer to their center but not touching it.",
+          "Trace patterns on their inner thighs with your tongue for 1 minute."
+        ]
       },
       "erotic": {
-        "rent_task": "Deliver 2 minutes of escalating closeness to this zone, building intensity slowly.",
-        "takeover_challenge": "High-intensity takeover: Perform a 2-minute explicit teasing scenario targeted at this zone."
+        "rent_task": [
+          "Gently bite and wet-kiss as high up on their inner thigh as possible for 45 seconds.",
+          "Slide your hands between their thighs with firm pressure, brushing their core slightly.",
+          "Use warm tongue strokes along their inner thigh line, breathing heavily on their skin.",
+          "Spread their legs apart gently and place your hands firmly on their upper inner thighs."
+        ],
+        "takeover_challenge": [
+          "Spend 1 minute delivering teasing touch and wet kisses directly adjacent to their genitals.",
+          "Part their legs and explore their innermost thigh area intensely with your mouth.",
+          "Use a combination of light scratches, bites, and deep tongue pressure on their inner thighs.",
+          "Restrain their legs open for 60 seconds while teasing the skin right next to their core."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_11",
     "tile_name": "Intimate Core",
-    "ring": "inner",
     "variants": {
-      "tease": {
-        "rent_task": "Maintain close physical proximity with light, building touches for 90 seconds.",
-        "takeover_challenge": "Deliver a prolonged, intense kiss while keeping hands firmly on your partner's hips."
+      "romantic": {
+        "rent_task": [
+          "Gently rub their clothed groin area for 30 seconds while kissing their neck.",
+          "Remove their underwear slowly, maintaining deep and loving eye contact.",
+          "Cradle their intimate core warmly with your hand over their clothes.",
+          "Give a slow, lingering kiss just above their pubic bone."
+        ],
+        "takeover_challenge": [
+          "Spend 60 seconds giving slow, deliberate hand stimulation to their core.",
+          "Take off their remaining clothes and gently massage their inner thighs and groin.",
+          "Provide gentle, rhythmic touch to their genitals using only two fingers for 1 minute.",
+          "Press your clothed core against theirs and grind slowly for 45 seconds."
+        ]
+      },
+      "sensual": {
+        "rent_task": [
+          "Use a warm, wet tongue to tease the very edges of their genitals.",
+          "Massage their clitoris or penis shaft slowly with warm lotion or saliva for 30 seconds.",
+          "Perform 45 seconds of soft oral teasing without going all the way in.",
+          "Trace the outline of their genitals with your tongue and light finger touches."
+        ],
+        "takeover_challenge": [
+          "Give exactly 1 minute of oral sex, focusing entirely on their pleasure.",
+          "Use your fingers to stimulate their most sensitive intimate spots gently for 60 seconds.",
+          "Straddle their face or lap and let them stimulate you for 1 minute.",
+          "Perform mutual manual stimulation while kissing deeply for 60 seconds."
+        ]
       },
       "erotic": {
-        "rent_task": "Fulfill a direct, specific request from the owner focused on this zone (2-minute limit).",
-        "takeover_challenge": "Execute a full 2-minute intimate challenge designed by your partner."
+        "rent_task": [
+          "Perform 45 seconds of vigorous and intense oral sex.",
+          "Penetrate them with your fingers, curling to find their most sensitive spot.",
+          "Use a vibrator or your tongue directly on their clitoris or frenulum for 30 seconds.",
+          "Edge them by bringing them close to climax and stopping abruptly."
+        ],
+        "takeover_challenge": [
+          "Perform 60 seconds of deep, continuous oral sex to bring them as close to climax as possible.",
+          "Engage in 1 minute of active penetrative sex (fingers, toys, or intercourse).",
+          "Take full control and use your mouth and fingers to ruthlessly stimulate their genitals for 60 seconds.",
+          "Instruct them to masturbate exactly how they like it while you watch for 1 minute."
+        ]
       }
     }
   },
   {
     "tile_id": "tile_12",
     "tile_name": "Wildcard / Desire Zone",
-    "ring": "inner",
     "variants": {
-      "tease": {
-        "rent_task": "The tile owner chooses any non-explicit desire or favor for 90 seconds.",
-        "takeover_challenge": "The challenger proposes a creative sensory challenge that both partners must perform."
+      "romantic": {
+        "rent_task": [
+          "Choose any romantic action to perform on your partner for 30 seconds.",
+          "Ask your partner how they want to be touched right now, and do it for 45 seconds.",
+          "Give your partner a 30-second massage on any body part they choose.",
+          "Have your partner guide your hands to their favorite non-intimate spot."
+        ],
+        "takeover_challenge": [
+          "Command a 60-second romantic fantasy of your choice.",
+          "Let your partner pick any challenge from the board to perform on you.",
+          "Spend 1 minute worshipping your partner's body however you see fit.",
+          "Share a 60-second tender, silent connection doing exactly what feels right."
+        ]
+      },
+      "sensual": {
+        "rent_task": [
+          "Pick a spot on your partner's body and tease it sensually for 45 seconds.",
+          "Introduce a blindfold or a prop and use it on your partner for 30 seconds.",
+          "Command your partner to touch you anywhere you want for 45 seconds.",
+          "Choose any sensual rent task you've seen so far and perform it now."
+        ],
+        "takeover_challenge": [
+          "Act out a sensual 60-second roleplay scenario of your choosing.",
+          "Use any toy, prop, or sensory item (ice, feather, oil) on your partner for 1 minute.",
+          "Command your partner to perform a sensual act on you for 60 seconds.",
+          "Take total control of the pace and style of touch for a full minute."
+        ]
       },
       "erotic": {
-        "rent_task": "The tile owner commands one explicit scenario or desire to be carried out (3-minute limit).",
-        "takeover_challenge": "The challenger unlocks a free-choice erotic request to winAh, got it. Let's drop the laboratory chemistry entirely and dial into the actual, visceral chemistry—the kind involving slow burns, close proximity, tension, and zero periodic tables." 
+        "rent_task": [
+          "Command your partner to perform a highly explicit sexual act for 45 seconds.",
+          "Introduce a sex toy and use it on your partner or yourself for 30 seconds.",
+          "Force your partner into an erotic position of your choice and tease them for 45 seconds.",
+          "Play out 45 seconds of your deepest, dirtiest fantasy."
+        ],
+        "takeover_challenge": [
+          "Command 1 full minute of completely unrestrained, explicit sexual touch or penetration.",
+          "Bind, blindfold, or fully restrain your partner and have your way with them for 60 seconds.",
+          "Make your partner beg for exactly what they want, then give it to them for 1 minute.",
+          "Command mutual masturbation or 69 for a full 60 seconds."
+        ]
       }
     }
-  }]
+  }
+]
